@@ -44,12 +44,15 @@ nav a.active {
 
 /* Hero Section */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
   background-image: url('images/sudd.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
   color: white;
-  
 }
+
+
 
 .hero .btn {
   background-color: white;

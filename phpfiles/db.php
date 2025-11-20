@@ -1,12 +1,13 @@
 <?php
-$host = "localhost";
-$user = "kur.malual";
-$pass = "kur_799";
+$servername = "localhost";
+$username = "kur.malual";
+$password = "kur_799";
 $dbname = "webtech_2025A_kur_malual";
 
-$conn = mysqli_connect($host, $user, $pass, $dbname);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+try {
+    $pdo = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("❌ ERROR: Could not connect. " . $e->getMessage());
 }
 ?>

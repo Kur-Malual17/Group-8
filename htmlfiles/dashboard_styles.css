@@ -1,0 +1,141 @@
+/* === Dashboard Layout === */
+:root {
+  --blue: #1E90FF;
+  --green: #00A86B;
+  --sidebar-bg: #0d1b2a;
+  --sidebar-text: #e0e1dd;
+  --light: #ffffff;
+  --gray: #f5f6fa;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--gray);
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 260px;
+  background: var(--sidebar-bg);
+  padding: 20px;
+  color: var(--sidebar-text);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar h2 {
+  color: var(--light);
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--sidebar-text);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+  background: var(--green);
+  color: var(--light);
+}
+
+/* === Main Content === */
+.main-content {
+  margin-left: 260px;
+  padding: 30px;
+  width: 100%;
+}
+
+/* === Cards === */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--light);
+  padding: 20px;
+  border-radius: 8px;
+  width: 240px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--green);
+  font-size: 2rem;
+}
+
+/* === Tables === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: white;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+table th {
+  background: var(--blue);
+  color: white;
+}
+
+/* === Forms === */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: var(--green);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #008f5c;
+}
+
+/* === Logout Button === */
+.logout-btn {
+  background: #d62828;
+  color: white !important;
+}
+
+.logout-btn:hover {
+  background: #a61d1d;
+}
