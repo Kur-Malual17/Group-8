@@ -4,36 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partners - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <header>
-  <h1>MobileCare South Sudan</h1>
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="impact.html">Impact</a>
-    <a href="partners.html">Partners</a>
-    <a href="contact.html">Contact</a>
-    <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-    <a href="login.php" class="login-btn">Login</a>
-  </nav>
+    <div class="container">
+      <div class="branding">
+        <h1>MobileCare SSD</h1>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div id="main-nav" class="main-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html#team">About</a>
+          <a href="services.html">Services</a>
+          <a href="impact.html">Impact</a>
+          <a href="partners.html" class="active">Partners</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
+          <a href="login.php" class="login-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-</header>
-
-
-  <main class="content">
+  <main class="content container">
     <h2>Our Partners</h2>
     <p>We proudly work with WHO, UNICEF, MSF, and the South Sudan Ministry of Health to extend healthcare access across the Sudd Wetland.</p>
-    <ul class="partners-list">
-      <li>World Health Organization (WHO)</li>
-      <li>UNICEF</li>
-      <li>Médecins Sans Frontières (MSF)</li>
-      <li>Ministry of Health</li>
-      <li>World Bank</li>
-    </ul>
+    <div class="partners-grid">
+      <div class="partner-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">World Health Organization</div>
+        <p class="bio">WHO works with us to deliver medical aid and technical support.</p>
+      </div>
+      <div class="partner-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">UNICEF</div>
+        <p class="bio">Support for child vaccination and hygiene programs.</p>
+      </div>
+      <div class="partner-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Médecins Sans Frontières (MSF)</div>
+        <p class="bio">Emergency medical assistance and capacity building.</p>
+      </div>
+      <div class="partner-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Ministry of Health</div>
+        <p class="bio">Collaboration on policies, referrals, and health system strengthening.</p>
+      </div>
+      <div class="partner-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">World Bank</div>
+        <p class="bio">Funding and infrastructure development support.</p>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -77,5 +108,6 @@
   </footer>
 
 
+  <script src="../scripts.js"></script>
 </body>
 </html>

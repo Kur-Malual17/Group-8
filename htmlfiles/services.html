@@ -4,36 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-
   <header>
-  <h1>MobileCare South Sudan</h1>
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="impact.html">Impact</a>
-    <a href="partners.html">Partners</a>
-    <a href="contact.html">Contact</a>
-    <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-    <a href="login.php" class="login-btn">Login</a>
-  </nav>
+    <div class="container">
+      <div class="branding">
+        <h1>MobileCare SSD</h1>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div id="main-nav" class="main-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html#team">About</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="impact.html">Impact</a>
+          <a href="partners.html">Partners</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
+          <a href="login.php" class="login-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-</header>
 
-
-  <main class="content">
+  <main class="content container">
     <h2>Our Services</h2>
-    <ul class="services-list">
-      <li><strong>Floating Clinics:</strong> Solar-powered boats for maternal and emergency care.</li>
-      <li><strong>Emergency Transport:</strong> Water-based medical evacuation during floods.</li>
-      <li><strong>Water Purification:</strong> Clean drinking water for remote communities.</li>
-      <li><strong>Telemedicine:</strong> Remote consultations through satellite communication.</li>
-      <li><strong>Health Education:</strong> Training in hygiene and disease prevention.</li>
-      <li><strong>Partnership Programs:</strong> Collaboration with NGOs and government agencies.</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Floating Clinics</div>
+        <p class="bio">Solar-powered boats for maternal and emergency care.</p>
+      </div>
+      <div class="service-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Emergency Transport</div>
+        <p class="bio">Water-based medical evacuation during floods.</p>
+      </div>
+      <div class="service-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Water Purification</div>
+        <p class="bio">Clean drinking water for remote communities.</p>
+      </div>
+      <div class="service-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Telemedicine</div>
+        <p class="bio">Remote consultations through satellite communication.</p>
+      </div>
+      <div class="service-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Health Education</div>
+        <p class="bio">Training in hygiene and disease prevention.</p>
+      </div>
+      <div class="service-card card">
+        <div class="photo" aria-hidden="true">Photo</div>
+        <div class="name">Partnership Programs</div>
+        <p class="bio">Collaboration with NGOs and government agencies.</p>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -76,6 +111,8 @@
     </div>
   </footer>
 
-
+  <script src="../scripts.js"></script>
 </body>
 </html>
+
+

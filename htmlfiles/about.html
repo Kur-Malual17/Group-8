@@ -4,32 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-
   <header>
-  <h1>MobileCare South Sudan</h1>
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="impact.html">Impact</a>
-    <a href="partners.html">Partners</a>
-    <a href="contact.html">Contact</a>
-    <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-    <a href="login.php" class="login-btn">Login</a>
-  </nav>
+    <div class="container">
+      <div class="branding">
+        <h1>MobileCare SSD</h1>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div id="main-nav" class="main-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html#team" class="active">About</a>
+          <a href="services.html">Services</a>
+          <a href="impact.html">Impact</a>
+          <a href="partners.html">Partners</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
+          <a href="login.php" class="login-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-</header>
+  <main class="content container">
+    <section class="intro section">
+      <h2>MobileCare South Sudan — Boat-Based Water Clinic</h2>
+      <p>
+        The Sudd Wetland is one of the world’s largest tropical wetlands (over 57,000 km²). Despite its rich ecology, more than
+        a million people there face very limited access to healthcare and safe drinking water. MobileCare delivers vital
+        healthcare, water purification, and health education via solar-powered floating clinics that serve remote wetland communities.
+      </p>
+    </section>
 
-  <main class="content">
-    <h2>About MobileCare</h2>
-    <p>
-      MobileCare South Sudan is a humanitarian health venture bringing essential medical care to isolated
-      communities in the Sudd Wetland. Through solar-powered floating clinics, telemedicine, and water purification systems,
-      we reach families where traditional healthcare cannot.
-    </p>
+    <section class="problem section">
+      <h3>Problems We Address</h3>
+      <ul class="problem-list">
+        <li><strong>Healthcare Access:</strong> Less than 30% of the population is within 5 km of a clinic. Seasonal flooding isolates communities and prevents land-based access.</li>
+        <li><strong>High Mortality Rates:</strong> Maternal mortality and malaria remain leading causes of preventable death.</li>
+        <li><strong>Unsafe Water:</strong> Many families use contaminated water, driving outbreaks of cholera and other illnesses.</li>
+        <li><strong>Geographical Barriers:</strong> Vast waterways and seasonal floods make traditional land-based healthcare impractical.</li>
+      </ul>
+    </section>
+
+    <section class="mission section">
+      <h3>Mission, Vision & Core Values</h3>
+      <div class="mission-grid">
+        <div class="card">
+          <h4>Mission</h4>
+          <p>To provide life-saving healthcare, clean drinking water, and health education to remote communities in the Sudd Wetland through mobile, accessible, and sustainable medical solutions.</p>
+        </div>
+        <div class="card">
+          <h4>Vision</h4>
+          <p>A South Sudan where every person, regardless of location, has access to essential healthcare and safe drinking water, fostering healthier communities and brighter futures.</p>
+        </div>
+      </div>
+      <div class="core-values">
+        <h4>Core Values</h4>
+        <ul>
+          <li><strong>Accessibility:</strong> Reaching underserved communities.</li>
+          <li><strong>Compassion:</strong> Delivering healthcare with empathy and respect.</li>
+          <li><strong>Innovation:</strong> Using mobile clinics and telemedicine to overcome barriers.</li>
+          <li><strong>Sustainability:</strong> Creating long-term impact through community involvement and education.</li>
+          <li><strong>Integrity:</strong> Operating transparently and ethically.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="team" class="team section">
+      <h3>Our Team</h3>
+      <div class="team-grid">
+        <div class="team-card card">
+          <img src="images/sudd.png" alt="image">
+          <div class="team-content">
+            <div class="name">Kur Malual Majok</div>
+            <p class="role"><em>Co-founder & CEO</em></p>
+            <p class="bio">Visionary leader overseeing strategy, partnerships and growth. Builds relationships with key stakeholders and oversees fundraising and finance.</p>
+          </div>
+        </div>
+        <div class="team-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="team-content">
+            <div class="name">Manyok Gai Chop</div>
+            <p class="role"><em>Co-founder & COO</em></p>
+            <p class="bio">Leads mobile operations, ensures integration of water purification and medical services; manages logistics and supplies.</p>
+          </div>
+        </div>
+        <div class="team-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="team-content">
+            <div class="name">Dr. Chol Alieer</div>
+            <p class="role"><em>Medical Professionals</em></p>
+            <p class="bio">Doctors and community health workers providing treatment and vaccination programs.</p>
+          </div>
+        </div>
+        <div class="team-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="team-content">
+            <div class="name">Abdul Akim</div>
+            <p class="role"><em>Water Purification Expert</em></p>
+            <p class="bio">Specialist in water treatment systems ensuring access to clean drinking water.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section">
+      <h3>Business Model & Services</h3>
+      <div class="services-grid">
+        <div class="service-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="name">Medical Services</div>
+          <p class="bio">Diagnosis, treatment, and vaccination programs to combat malaria, cholera and other illnesses.</p>
+        </div>
+        <div class="service-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="name">Telemedicine</div>
+          <p class="bio">Remote consultations and specialist referrals via satellite communications.</p>
+        </div>
+        <div class="service-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="name">Water Purification</div>
+          <p class="bio">On-board filtration and household filters for safe drinking water.</p>
+        </div>
+        <div class="service-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="name">Health Education</div>
+          <p class="bio">Community training in hygiene and sanitation to prevent disease outbreaks.</p>
+        </div>
+        <div class="service-card card">
+          <div class="photo" aria-hidden="true">Photo</div>
+          <div class="name">Emergency Transport</div>
+          <p class="bio">Rapid evacuation and transport for critical patients needing higher-level care.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="market section">
+      <h3>Market Opportunity & Strategy</h3>
+      <p>
+        MobileCare targets the Sudd Wetland and similar wetland communities where access is limited. Our hybrid revenue model includes institutional contracts, CSR partnerships, small subsidized fees, telemedicine services, and grants — a balanced mix to ensure sustainability while maintaining affordability for communities.
+      </p>
+      <p>
+        For the initial phase, we focus on high-need communities and expand through partnerships, digital health integration, and careful scaling. Impact metrics include reduced maternal mortality, malaria incidence, and improved access to clean water.
+      </p>
+    </section>
+
+    <section class="cta section">
+      <h3>Want to Partner or Support?</h3>
+      <p>Reach out to our team to support our mobile clinic program or partner with us on health, water, and education initiatives.</p>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </section>
   </main>
 
   <footer>
@@ -74,5 +206,6 @@
   </footer>
 
 
+  <script src="../scripts.js"></script>
 </body>
 </html>

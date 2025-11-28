@@ -4,35 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MobileCare South Sudan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <!-- Navigation -->
   <header>
-    <h1>MobileCare South Sudan</h1>
+    <div class="container">
+      <div class="branding">
+        <h1>MobileCare SSD</h1>
+      </div>
+     <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+       <span></span>
+       <span></span>
+       <span></span>
+     </button>
+    <div id="main-nav" class="main-nav">
     <nav>
       <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html#team">About</a>
       <a href="services.html">Services</a>
       <a href="impact.html">Impact</a>
       <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
       <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
       <a href="login.php" class="login-btn">Login</a>
-    </nav>
+    </div>
+     </div>
+    </div>
 
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Transforming Healthcare Across the Sudd Wetland</h2>
-    <p>Delivering life-saving medical care, clean water, and telemedicine to the most remote corners of South Sudan through innovation and compassion.</p>
-    <a href="services.html" class="btn">Explore Our Work</a>
+    <div class="hero-content">
+      <h2>Transforming Healthcare Across the Sudd Wetland</h2>
+      <p>Delivering life-saving medical care, clean water, and telemedicine to the most remote corners of South Sudan through innovation and compassion.</p>
+      <a href="services.html" class="btn">Explore Our Work</a>
+    </div>
   </section>
 
   <!-- Mission & Vision -->
-  <section class="content">
+  <section class="content container">
     <h2>Our Mission & Vision</h2>
     <p>
       At <strong>MobileCare South Sudan</strong>, our mission is to make quality healthcare accessible to every
@@ -45,36 +60,35 @@
   </section>
 
   <!-- Why Choose Us -->
-  <section class="why-us">
+  <section class="why-us container">
     <h2>Why Choose MobileCare?</h2>
     <div class="features">
-      <div>
+      <div class="card">
         <h3>Sustainable Innovation</h3>
         <p>Powered by solar energy and floating technology, we operate year-round even during floods.</p>
       </div>
-      <div>
+      <div class="card">
         <h3>Skilled Medical Teams</h3>
         <p>Dedicated doctors, nurses, and field staff delivering compassionate and high-quality care.</p>
       </div>
-      <div>
+      <div class="card">
         <h3>Trusted Partnerships</h3>
         <p>Working hand-in-hand with the Ministry of Health, WHO, UNICEF, and community leaders.</p>
       </div>
-      <div>
+      <div class="card">
         <h3>Transparency & Data</h3>
         <p>Every donation and project is tracked, reported, and openly shared with stakeholders.</p>
       </div>
     </div>
   </section>
 
-  <!-- Impact Summary -->
-  <section class="impact-summary">
+  <section class="impact-summary container">
     <h2>Our Ongoing Impact</h2>
     <div class="stats">
-      <div><h3>8,000+</h3><p>Patients Treated</p></div>
-      <div><h3>4+</h3><p>Floating Clinics</p></div>
-      <div><h3>5+</h3><p>NGO & CSR Partners</p></div>
-      <div><h3>10+</h3><p>Medical Staff Trained</p></div>
+      <div class="card"><h3>8,000+</h3><p>Patients Treated</p></div>
+      <div class="card"><h3>4+</h3><p>Floating Clinics</p></div>
+      <div class="card"><h3>5+</h3><p>NGO & CSR Partners</p></div>
+      <div class="card"><h3>10+</h3><p>Medical Staff Trained</p></div>
     </div>
     <p class="impact-text">
       Every clinic that sails through the Sudd represents hope — mothers receiving care, children being vaccinated,
@@ -82,8 +96,8 @@
     </p>
   </section>
 
-  <!-- Call to Action -->
-  <section class="cta">
+
+  <section class="cta container">
     <h2>Join Us in Making a Difference</h2>
     <p>Your support helps us reach more families across the wetlands with healthcare and hope.</p>
     <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
@@ -130,14 +144,7 @@
     </div>
   </footer>
 
+  <script src="../scripts.js"></script>
 </body>
 </html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>`
 

@@ -4,26 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impact - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <header>
-  <h1>MobileCare South Sudan</h1>
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="impact.html">Impact</a>
-    <a href="partners.html">Partners</a>
-    <a href="contact.html">Contact</a>
-    <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-    <a href="login.php" class="login-btn">Login</a>
-  </nav>
-
-</header>
-  <main class="content">
-    <h2>Our Impact</h2>
+    <div class="container">
+      <div class="branding">
+        <h1>MobileCare SSD</h1>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div id="main-nav" class="main-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html#team">About</a>
+          <a href="services.html">Services</a>
+          <a href="impact.html" class="active">Impact</a>
+          <a href="partners.html">Partners</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
+          <a href="login.php" class="login-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
     <div class="stats">
       <div><h3>8K+</h3><p>Patients Treated</p></div>
       <div><h3>4+</h3><p>Floating Clinics</p></div>
@@ -72,5 +82,6 @@
   </footer>
 
 
+  <script src="../scripts.js"></script>
 </body>
 </html>
