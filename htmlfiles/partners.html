@@ -4,110 +4,394 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partners - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <header>
+  <!-- Header -->
+  <header class="main-header">
     <div class="container">
       <div class="branding">
-        <h1>MobileCare SSD</h1>
+        <div class="logo">
+          <i class="fas fa-ship"></i>
+          <div class="logo-text">
+            <h1>MobileCare SSD</h1>
+            <span class="tagline">Healthcare on the Water</span>
+          </div>
+        </div>
       </div>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <button class="hamburger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div id="main-nav" class="main-nav">
+      <div class="main-nav">
         <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html#team">About</a>
-          <a href="services.html">Services</a>
-          <a href="impact.html">Impact</a>
-          <a href="partners.html" class="active">Partners</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" class="nav-link" data-text="Home">Home</a>
+          <a href="about.html" class="nav-link" data-text="About">About</a>
+          <a href="services.html" class="nav-link" data-text="Services">Services</a>
+          <a href="impact.html" class="nav-link" data-text="Impact">Impact</a>
+          <a href="partners.html" class="nav-link active" data-text="Partners">Partners</a>
+          <a href="contact.html" class="nav-link" data-text="Contact">Contact</a>
         </nav>
         <div class="nav-actions">
-          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-          <a href="login.php" class="login-btn">Login</a>
+          <a href="donate.php" class="donate-btn" target="_blank">
+            <i class="fas fa-heart"></i> Donate Now
+          </a>
+          <a href="login.php" class="login-btn">
+            <i class="fas fa-user"></i> Login
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="content container">
-    <h2>Our Partners</h2>
-    <p>We proudly work with WHO, UNICEF, MSF, and the South Sudan Ministry of Health to extend healthcare access across the Sudd Wetland.</p>
-    <div class="partners-grid">
-      <div class="partner-card card">
-        <div class="photo" aria-hidden="true">Photo</div>
-        <div class="name">World Health Organization</div>
-        <p class="bio">WHO works with us to deliver medical aid and technical support.</p>
-      </div>
-      <div class="partner-card card">
-        <div class="photo" aria-hidden="true">Photo</div>
-        <div class="name">UNICEF</div>
-        <p class="bio">Support for child vaccination and hygiene programs.</p>
-      </div>
-      <div class="partner-card card">
-        <div class="photo" aria-hidden="true">Photo</div>
-        <div class="name">Médecins Sans Frontières (MSF)</div>
-        <p class="bio">Emergency medical assistance and capacity building.</p>
-      </div>
-      <div class="partner-card card">
-        <div class="photo" aria-hidden="true">Photo</div>
-        <div class="name">Ministry of Health</div>
-        <p class="bio">Collaboration on policies, referrals, and health system strengthening.</p>
-      </div>
-      <div class="partner-card card">
-        <div class="photo" aria-hidden="true">Photo</div>
-        <div class="name">World Bank</div>
-        <p class="bio">Funding and infrastructure development support.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>About MobileCare</h4>
-        <p>MobileCare South Sudan provides innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="impact.html">Impact Reports</a></li>
-          <li><a href="partners.html">Our Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Contact Info</h4>
-        <p>📍 Juba, South Sudan</p>
-        <p>📧 info@mobilecare-ss.org</p>
-        <p>📞 +211 924 828 569</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="#">🌐 Facebook</a>
-          <a href="#">🐦 Twitter</a>
-          <a href="#">📸 Instagram</a>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Our Partners</h1>
+        <p>Collaborating with global and local organizations to maximize our impact</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <span class="current">Partners</span>
         </div>
       </div>
     </div>
+    <div class="header-wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+  <!-- Partners Intro -->
+  <section class="partners-intro">
+    <div class="container">
+      <div class="intro-content">
+        <h2>Strategic Partnerships for Greater Impact</h2>
+        <p>We proudly collaborate with international organizations, government agencies, and local communities to extend healthcare access across the Sudd Wetland. Our partnerships enable us to leverage expertise, resources, and networks to maximize our impact.</p>
+        <div class="partners-stats">
+          <div class="partner-stat">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Strategic Partners</div>
+          </div>
+          <div class="partner-stat">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Local Communities</div>
+          </div>
+          <div class="partner-stat">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Government Agencies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Partners -->
+  <section class="main-partners">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Strategic Partners</h2>
+        <p class="section-subtitle">Working together to transform healthcare in South Sudan</p>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <div class="partner-logo">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>World Health Organization</h3>
+          <p class="partner-role">Technical Support & Medical Supplies</p>
+          <p>WHO works with us to deliver medical aid, technical expertise, and essential supplies to ensure quality healthcare delivery.</p>
+          <div class="partner-impact">
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Medical guidelines & protocols</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Emergency response support</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Health system strengthening</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-logo">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3>UNICEF</h3>
+          <p class="partner-role">Child & Maternal Health</p>
+          <p>Support for child vaccination programs, maternal health initiatives, and hygiene education in wetland communities.</p>
+          <div class="partner-impact">
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Vaccination programs</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Maternal care support</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Hygiene education materials</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-logo">
+            <i class="fas fa-plus-square"></i>
+          </div>
+          <h3>Médecins Sans Frontières</h3>
+          <p class="partner-role">Emergency Medical Assistance</p>
+          <p>MSF provides emergency medical assistance, capacity building, and support for complex medical cases.</p>
+          <div class="partner-impact">
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Emergency response training</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Specialist medical support</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Capacity building programs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-logo">
+            <i class="fas fa-landmark"></i>
+          </div>
+          <h3>Ministry of Health</h3>
+          <p class="partner-role">Policy & System Integration</p>
+          <p>Collaboration on health policies, referral systems, and integration with national health infrastructure.</p>
+          <div class="partner-impact">
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Policy alignment</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Referral system coordination</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Health system integration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-logo">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>World Bank</h3>
+          <p class="partner-role">Funding & Infrastructure</p>
+          <p>Support for infrastructure development, funding for equipment, and health system strengthening initiatives.</p>
+          <div class="partner-impact">
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Infrastructure funding</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Equipment procurement</span>
+            </div>
+            <div class="impact-item">
+              <i class="fas fa-check"></i>
+              <span>Health system projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Benefits -->
+  <section class="partnership-benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Partner With Us?</h2>
+        <p class="section-subtitle">Creating meaningful impact through strategic collaboration</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Proven Impact</h3>
+          <p>Demonstrated success in reaching remote communities with measurable health outcomes and community transformation.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Community Trust</h3>
+          <p>Strong relationships with local communities built on trust, respect, and collaborative decision-making.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Transparent Operations</h3>
+          <p>Complete financial and operational transparency with regular reporting and impact assessment.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovative Approach</h3>
+          <p>Cutting-edge solutions for healthcare delivery in challenging environments with sustainable models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Process -->
+  <section class="partnership-process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Partnership Process</h2>
+        <p class="section-subtitle">How we work together to create lasting impact</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Initial Discussion</h3>
+            <p>We begin with understanding your organization's goals and exploring alignment with our mission.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Needs Assessment</h3>
+            <p>Joint assessment of community needs and development of targeted intervention strategies.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Partnership Agreement</h3>
+            <p>Formalizing our collaboration with clear roles, responsibilities, and expected outcomes.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Implementation & Monitoring</h3>
+            <p>Executing programs with continuous monitoring, evaluation, and adaptive management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Interested in Partnering With Us?</h2>
+          <p>Join our network of partners and help us expand our impact across the Sudd Wetland</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-large">
+            <i class="fas fa-handshake"></i>
+            <span>Become a Partner</span>
+          </a>
+          <a href="downloads/partnership-proposal.pdf" class="btn btn-secondary btn-large">
+            <i class="fas fa-download"></i>
+            <span>Download Proposal</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-ship"></i>
+            <div>
+              <h3>MobileCare SSD</h3>
+              <span>Healthcare on the Water</span>
+            </div>
+          </div>
+          <p>Providing innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+            <li><a href="impact.html"><i class="fas fa-chevron-right"></i> Impact Reports</a></li>
+            <li><a href="partners.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Juba, South Sudan</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@mobilecare-ss.org</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+211 924 828 569</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get updates on our work and impact.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-
-  <script src="../scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

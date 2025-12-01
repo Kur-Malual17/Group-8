@@ -4,208 +4,380 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header class="main-header">
     <div class="container">
       <div class="branding">
-        <h1>MobileCare SSD</h1>
+        <div class="logo">
+          <i class="fas fa-ship"></i>
+          <div class="logo-text">
+            <h1>MobileCare SSD</h1>
+            <span class="tagline">Healthcare on the Water</span>
+          </div>
+        </div>
       </div>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <button class="hamburger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div id="main-nav" class="main-nav">
+      <div class="main-nav">
         <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html#team" class="active">About</a>
-          <a href="services.html">Services</a>
-          <a href="impact.html">Impact</a>
-          <a href="partners.html">Partners</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" class="nav-link" data-text="Home">Home</a>
+          <a href="about.html" class="nav-link active" data-text="About">About</a>
+          <a href="services.html" class="nav-link" data-text="Services">Services</a>
+          <a href="impact.html" class="nav-link" data-text="Impact">Impact</a>
+          <a href="partners.html" class="nav-link" data-text="Partners">Partners</a>
+          <a href="contact.html" class="nav-link" data-text="Contact">Contact</a>
         </nav>
         <div class="nav-actions">
-          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-          <a href="login.php" class="login-btn">Login</a>
+          <a href="donate.php" class="donate-btn" target="_blank">
+            <i class="fas fa-heart"></i> Donate Now
+          </a>
+          <a href="login.php" class="login-btn">
+            <i class="fas fa-user"></i> Login
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="content container">
-    <section class="intro section">
-      <h2>MobileCare South Sudan — Boat-Based Water Clinic</h2>
-      <p>
-        The Sudd Wetland is one of the world’s largest tropical wetlands (over 57,000 km²). Despite its rich ecology, more than
-        a million people there face very limited access to healthcare and safe drinking water. MobileCare delivers vital
-        healthcare, water purification, and health education via solar-powered floating clinics that serve remote wetland communities.
-      </p>
-    </section>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>About MobileCare</h1>
+        <p>Learn about our mission, vision, team, and the innovative approach we're taking to transform healthcare in South Sudan</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <span class="current">About</span>
+        </div>
+      </div>
+    </div>
+    <div class="header-wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
 
-    <section class="problem section">
-      <h3>Problems We Address</h3>
-      <ul class="problem-list">
-        <li><strong>Healthcare Access:</strong> Less than 30% of the population is within 5 km of a clinic. Seasonal flooding isolates communities and prevents land-based access.</li>
-        <li><strong>High Mortality Rates:</strong> Maternal mortality and malaria remain leading causes of preventable death.</li>
-        <li><strong>Unsafe Water:</strong> Many families use contaminated water, driving outbreaks of cholera and other illnesses.</li>
-        <li><strong>Geographical Barriers:</strong> Vast waterways and seasonal floods make traditional land-based healthcare impractical.</li>
-      </ul>
-    </section>
+  <!-- Introduction -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2>MobileCare South Sudan — Boat-Based Water Clinic</h2>
+          <p>The Sudd Wetland is one of the world's largest tropical wetlands (over 57,000 km²). Despite its rich ecology, more than a million people there face very limited access to healthcare and safe drinking water.</p>
+          <p>MobileCare delivers vital healthcare, water purification, and health education via solar-powered floating clinics that serve remote wetland communities.</p>
+        </div>
+        <div class="intro-visual">
+          <img src="images/2.jpg" alt="MobileCare Floating Clinic on the water" class="intro-image">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="mission section">
-      <h3>Mission, Vision & Core Values</h3>
-      <div class="mission-grid">
-        <div class="card">
-          <h4>Mission</h4>
+  <!-- Problems Section -->
+  <section class="problems-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Challenges We Address</h2>
+        <p class="section-subtitle">Overcoming barriers to healthcare in the Sudd Wetland</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-icon">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <h3>Healthcare Access</h3>
+          <p>Less than 30% of the population is within 5 km of a clinic. Seasonal flooding isolates communities and prevents land-based access.</p>
+          <div class="problem-stats">
+            <span class="stat">30%</span>
+            <span class="label">Within 5km of clinic</span>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>High Mortality Rates</h3>
+          <p>Maternal mortality and malaria remain leading causes of preventable death in the region.</p>
+          <div class="problem-stats">
+            <span class="stat">789</span>
+            <span class="label">Maternal deaths per 100k</span>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Unsafe Water</h3>
+          <p>Many families use contaminated water, driving outbreaks of cholera and other waterborne illnesses.</p>
+          <div class="problem-stats">
+            <span class="stat">60%</span>
+            <span class="label">No clean water access</span>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">
+            <i class="fas fa-map"></i>
+          </div>
+          <h3>Geographical Barriers</h3>
+          <p>Vast waterways and seasonal floods make traditional land-based healthcare impractical and inaccessible.</p>
+          <div class="problem-stats">
+            <span class="stat">57,000km²</span>
+            <span class="label">Wetland area</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="mission-values-section">
+    <div class="container">
+      <div class="mission-values-grid">
+        <div class="mission-card">
+          <div class="card-header">
+            <i class="fas fa-bullseye"></i>
+            <h3>Our Mission</h3>
+          </div>
           <p>To provide life-saving healthcare, clean drinking water, and health education to remote communities in the Sudd Wetland through mobile, accessible, and sustainable medical solutions.</p>
         </div>
-        <div class="card">
-          <h4>Vision</h4>
+        <div class="mission-card">
+          <div class="card-header">
+            <i class="fas fa-eye"></i>
+            <h3>Our Vision</h3>
+          </div>
           <p>A South Sudan where every person, regardless of location, has access to essential healthcare and safe drinking water, fostering healthier communities and brighter futures.</p>
         </div>
+        <div class="values-card">
+          <div class="card-header">
+            <i class="fas fa-star"></i>
+            <h3>Core Values</h3>
+          </div>
+          <div class="values-list">
+            <div class="value-item">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Accessibility:</strong> Reaching underserved communities
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Compassion:</strong> Delivering healthcare with empathy and respect
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Innovation:</strong> Using mobile clinics and telemedicine to overcome barriers
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Sustainability:</strong> Creating long-term impact through community involvement
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Integrity:</strong> Operating transparently and ethically
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="core-values">
-        <h4>Core Values</h4>
-        <ul>
-          <li><strong>Accessibility:</strong> Reaching underserved communities.</li>
-          <li><strong>Compassion:</strong> Delivering healthcare with empathy and respect.</li>
-          <li><strong>Innovation:</strong> Using mobile clinics and telemedicine to overcome barriers.</li>
-          <li><strong>Sustainability:</strong> Creating long-term impact through community involvement and education.</li>
-          <li><strong>Integrity:</strong> Operating transparently and ethically.</li>
-        </ul>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="team" class="team section">
-      <h3>Our Team</h3>
+  <!-- Team Section -->
+  <section id="team" class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-subtitle">Dedicated professionals making healthcare accessible</p>
+      </div>
       <div class="team-grid">
-        <div class="team-card card">
-          <img src="images/sudd.png" alt="image">
-          <div class="team-content">
-            <div class="name">Kur Malual Majok</div>
-            <p class="role"><em>Co-founder & CEO</em></p>
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="images/kur prof.jpeg" alt="Kur Malual Majok - Co-founder & CEO">
+          </div>
+          <div class="member-info">
+            <h3>Kur Malual Majok</h3>
+            <p class="role">Co-founder & CEO</p>
             <p class="bio">Visionary leader overseeing strategy, partnerships and growth. Builds relationships with key stakeholders and oversees fundraising and finance.</p>
           </div>
         </div>
-        <div class="team-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="team-content">
-            <div class="name">Manyok Gai Chop</div>
-            <p class="role"><em>Co-founder & COO</em></p>
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="images/IMG_7177JPG" alt="Manyok Gai Chop - Co-founder & COO">
+          </div>
+          <div class="member-info">
+            <h3>Manyok Gai Chop</h3>
+            <p class="role">Co-founder & COO</p>
             <p class="bio">Leads mobile operations, ensures integration of water purification and medical services; manages logistics and supplies.</p>
           </div>
         </div>
-        <div class="team-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="team-content">
-            <div class="name">Dr. Chol Alieer</div>
-            <p class="role"><em>Medical Professionals</em></p>
-            <p class="bio">Doctors and community health workers providing treatment and vaccination programs.</p>
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="images/chol.jpeg" alt="Dr. Chol Alieer - Medical Director">
+          </div>
+          <div class="member-info">
+            <h3>Dr. Chol Alieer</h3>
+            <p class="role">Medical Director</p>
+            <p class="bio">Doctors and community health workers providing treatment and vaccination programs across the wetland communities.</p>
           </div>
         </div>
-        <div class="team-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="team-content">
-            <div class="name">Abdul Akim</div>
-            <p class="role"><em>Water Purification Expert</em></p>
-            <p class="bio">Specialist in water treatment systems ensuring access to clean drinking water.</p>
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="images/1.jpg" alt="Abdul Akim - Water Purification Expert">
+          </div>
+          <div class="member-info">
+            <h3>Abdul Akim</h3>
+            <p class="role">Water Purification Expert</p>
+            <p class="bio">Specialist in water treatment systems ensuring access to clean drinking water for all communities we serve.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="services section">
-      <h3>Business Model & Services</h3>
-      <div class="services-grid">
-        <div class="service-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="name">Medical Services</div>
-          <p class="bio">Diagnosis, treatment, and vaccination programs to combat malaria, cholera and other illnesses.</p>
-        </div>
-        <div class="service-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="name">Telemedicine</div>
-          <p class="bio">Remote consultations and specialist referrals via satellite communications.</p>
-        </div>
-        <div class="service-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="name">Water Purification</div>
-          <p class="bio">On-board filtration and household filters for safe drinking water.</p>
-        </div>
-        <div class="service-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="name">Health Education</div>
-          <p class="bio">Community training in hygiene and sanitation to prevent disease outbreaks.</p>
-        </div>
-        <div class="service-card card">
-          <div class="photo" aria-hidden="true">Photo</div>
-          <div class="name">Emergency Transport</div>
-          <p class="bio">Rapid evacuation and transport for critical patients needing higher-level care.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="market section">
-      <h3>Market Opportunity & Strategy</h3>
-      <p>
-        MobileCare targets the Sudd Wetland and similar wetland communities where access is limited. Our hybrid revenue model includes institutional contracts, CSR partnerships, small subsidized fees, telemedicine services, and grants — a balanced mix to ensure sustainability while maintaining affordability for communities.
-      </p>
-      <p>
-        For the initial phase, we focus on high-need communities and expand through partnerships, digital health integration, and careful scaling. Impact metrics include reduced maternal mortality, malaria incidence, and improved access to clean water.
-      </p>
-    </section>
-
-    <section class="cta section">
-      <h3>Want to Partner or Support?</h3>
-      <p>Reach out to our team to support our mobile clinic program or partner with us on health, water, and education initiatives.</p>
-      <a class="btn" href="contact.html">Contact Us</a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>About MobileCare</h4>
-        <p>MobileCare South Sudan provides innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="impact.html">Impact Reports</a></li>
-          <li><a href="partners.html">Our Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Contact Info</h4>
-        <p>📍 Juba, South Sudan</p>
-        <p>📧 info@mobilecare-ss.org</p>
-        <p>📞 +211 924 828 569</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="#">🌐 Facebook</a>
-          <a href="#">🐦 Twitter</a>
-          <a href="#">📸 Instagram</a>
-        </div>
-    
       </div>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+  <!-- Services Overview -->
+  <section class="services-overview">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Approach</h2>
+        <p class="section-subtitle">Integrated services for comprehensive community health</p>
+      </div>
+      <div class="services-mini-grid">
+        <div class="service-mini-card">
+          <i class="fas fa-stethoscope"></i>
+          <h4>Medical Care</h4>
+          <p>Primary healthcare and emergency services</p>
+        </div>
+        <div class="service-mini-card">
+          <i class="fas fa-tint"></i>
+          <h4>Clean Water</h4>
+          <p>Water purification and distribution</p>
+        </div>
+        <div class="service-mini-card">
+          <i class="fas fa-satellite-dish"></i>
+          <h4>Telemedicine</h4>
+          <p>Remote consultations and specialist access</p>
+        </div>
+        <div class="service-mini-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Education</h4>
+          <p>Health and hygiene training programs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Join Our Mission</h2>
+          <p>Help us expand our impact and reach more communities in need across the Sudd Wetland</p>
+        </div>
+        <div class="cta-actions">
+          <a href="donate.php" class="btn btn-primary btn-large">
+            <i class="fas fa-heart"></i>
+            <span>Support Our Work</span>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-large">
+            <i class="fas fa-handshake"></i>
+            <span>Partner With Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-ship"></i>
+            <div>
+              <h3>MobileCare SSD</h3>
+              <span>Healthcare on the Water</span>
+            </div>
+          </div>
+          <p>Providing innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+            <li><a href="impact.html"><i class="fas fa-chevron-right"></i> Impact Reports</a></li>
+            <li><a href="partners.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Juba, South Sudan</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@mobilecare-ss.org</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+211 924 828 569</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get updates on our work and impact.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-
-  <script src="../scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

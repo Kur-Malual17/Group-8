@@ -4,86 +4,463 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <header>
+  <!-- Header -->
+  <header class="main-header">
     <div class="container">
       <div class="branding">
-        <h1>MobileCare SSD</h1>
+        <div class="logo">
+          <i class="fas fa-ship"></i>
+          <div class="logo-text">
+            <h1>MobileCare SSD</h1>
+            <span class="tagline">Healthcare on the Water</span>
+          </div>
+        </div>
       </div>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <button class="hamburger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div id="main-nav" class="main-nav">
+      <div class="main-nav">
         <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html#team">About</a>
-          <a href="services.html">Services</a>
-          <a href="impact.html">Impact</a>
-          <a href="partners.html">Partners</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="index.html" class="nav-link" data-text="Home">Home</a>
+          <a href="about.html" class="nav-link" data-text="About">About</a>
+          <a href="services.html" class="nav-link" data-text="Services">Services</a>
+          <a href="impact.html" class="nav-link" data-text="Impact">Impact</a>
+          <a href="partners.html" class="nav-link" data-text="Partners">Partners</a>
+          <a href="contact.html" class="nav-link active" data-text="Contact">Contact</a>
         </nav>
         <div class="nav-actions">
-          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-          <a href="login.php" class="login-btn">Login</a>
+          <a href="donate.php" class="donate-btn" target="_blank">
+            <i class="fas fa-heart"></i> Donate Now
+          </a>
+          <a href="login.php" class="login-btn">
+            <i class="fas fa-user"></i> Login
+          </a>
         </div>
       </div>
     </div>
   </header>
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>About MobileCare</h4>
-        <p>MobileCare South Sudan provides innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="impact.html">Impact Reports</a></li>
-          <li><a href="partners.html">Our Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Contact Info</h4>
-        <p>📍 Juba, South Sudan</p>
-        <p>📧 info@mobilecare-ss.org</p>
-        <p>📞 +211 924 828 569</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="#">🌐 Facebook</a>
-          <a href="#">🐦 Twitter</a>
-          <a href="#">📸 Instagram</a>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team to learn more, partner with us, or support our mission</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <span class="current">Contact</span>
         </div>
       </div>
     </div>
+    <div class="header-wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+  <!-- Contact Content -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>We'd love to hear from you. Whether you're interested in partnering, volunteering, or learning more about our work, our team is ready to connect with you.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="method-content">
+                <h3>Visit Our Office</h3>
+                <p>Juba, South Sudan<br>Central Business District</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="method-content">
+                <h3>Call Us</h3>
+                <p>+211 924 828 569<br>+211 912 345 678</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-content">
+                <h3>Email Us</h3>
+                <p>info@mobilecare-ss.org<br>partnerships@mobilecare-ss.org</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="method-content">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="emergency-contact">
+            <div class="emergency-alert">
+              <i class="fas fa-exclamation-triangle"></i>
+              <div>
+                <h4>Emergency Medical Contact</h4>
+                <p>For urgent medical assistance in the Sudd Wetland region, contact our emergency response team.</p>
+                <a href="tel:+211924828569" class="emergency-btn">
+                  <i class="fas fa-phone"></i>
+                  Emergency Hotline: +211 924 828 569
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h3>Send Us a Message</h3>
+            <p>Fill out the form below and we'll get back to you as soon as possible</p>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required>
+              <div class="input-icon">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+              <div class="input-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+              <div class="input-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="partnership">Partnership Inquiry</option>
+                <option value="donation">Donation Information</option>
+                <option value="volunteer">Volunteer Opportunity</option>
+                <option value="general">General Information</option>
+                <option value="media">Media Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="input-icon">
+                <i class="fas fa-tag"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+              <div class="input-icon">
+                <i class="fas fa-comment"></i>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-subtitle">Our headquarters in Juba and operational areas across the Sudd Wetland</p>
+      </div>
+      <div class="map-container">
+        <div class="office-map">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Interactive Map</h3>
+            <p>Our operational areas across South Sudan</p>
+            <div class="map-locations">
+              <div class="location">
+                <i class="fas fa-star"></i>
+                <span>Juba Headquarters</span>
+              </div>
+              <div class="location">
+                <i class="fas fa-ship"></i>
+                <span>Bor County Operations</span>
+              </div>
+              <div class="location">
+                <i class="fas fa-ship"></i>
+                <span>Bentiu Operations</span>
+              </div>
+              <div class="location">
+                <i class="fas fa-ship"></i>
+                <span>Terekeka Operations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-info">
+          <h3>Operational Coverage</h3>
+          <p>MobileCare operates across multiple regions in South Sudan, with our main headquarters in Juba and mobile clinics serving communities throughout the Sudd Wetland.</p>
+          <div class="coverage-stats">
+            <div class="coverage-stat">
+              <span class="number">4</span>
+              <span class="label">Operational Regions</span>
+            </div>
+            <div class="coverage-stat">
+              <span class="number">15</span>
+              <span class="label">Communities Served</span>
+            </div>
+            <div class="coverage-stat">
+              <span class="number">57,000km²</span>
+              <span class="label">Coverage Area</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Contact -->
+  <section class="team-contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Our Team</h2>
+        <p class="section-subtitle">Reach out to specific team members based on your inquiry</p>
+      </div>
+      <div class="team-contact-grid">
+        <div class="team-contact-card">
+          <div class="contact-avatar">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Kur Malual Majok</h3>
+          <p class="role">Co-founder & CEO</p>
+          <p class="contact-desc">For partnership opportunities and strategic inquiries</p>
+          <a href="mailto:kur@mobilecare-ss.org" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            kur@mobilecare-ss.org
+          </a>
+        </div>
+
+        <div class="team-contact-card">
+          <div class="contact-avatar">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Manyok Gai Chop</h3>
+          <p class="role">Co-founder & COO</p>
+          <p class="contact-desc">For operational questions and program information</p>
+          <a href="mailto:manyok@mobilecare-ss.org" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            manyok@mobilecare-ss.org
+          </a>
+        </div>
+
+        <div class="team-contact-card">
+          <div class="contact-avatar">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h3>Partnership Team</h3>
+          <p class="role">Partnerships & Funding</p>
+          <p class="contact-desc">For donation inquiries and partnership proposals</p>
+          <a href="mailto:partnerships@mobilecare-ss.org" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            partnerships@mobilecare-ss.org
+          </a>
+        </div>
+
+        <div class="team-contact-card">
+          <div class="contact-avatar">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Volunteer Coordinator</h3>
+          <p class="role">Volunteer Programs</p>
+          <p class="contact-desc">For volunteering opportunities and applications</p>
+          <a href="mailto:volunteer@mobilecare-ss.org" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            volunteer@mobilecare-ss.org
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="contact-faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions about MobileCare</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I support MobileCare's work?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>You can support us through financial donations, in-kind contributions of medical supplies, volunteering your time and expertise, or by helping us spread awareness about our work. Visit our donation page or contact our partnerships team for more information.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you accept international volunteers?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we welcome international volunteers with relevant medical, technical, or operational expertise. All volunteers undergo a screening process and orientation. Contact our volunteer coordinator for current opportunities and requirements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How are donations used?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Donations are primarily used for medical supplies, clinic maintenance and fuel, staff training, and community health programs. We maintain full financial transparency and provide regular reports to our donors about how their contributions are making an impact.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can organizations partner with MobileCare?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! We actively seek partnerships with organizations that share our mission. Partnerships can take various forms including funding, technical expertise, resource sharing, or collaborative programs. Contact our CEO or partnerships team to discuss potential collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Ready to Make a Difference?</h2>
+          <p>Join us in bringing healthcare and hope to remote communities across the Sudd Wetland</p>
+        </div>
+        <div class="cta-actions">
+          <a href="donate.php" class="btn btn-primary btn-large">
+            <i class="fas fa-heart"></i>
+            <span>Donate Now</span>
+          </a>
+          <a href="volunteer.html" class="btn btn-secondary btn-large">
+            <i class="fas fa-hands-helping"></i>
+            <span>Volunteer</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-ship"></i>
+            <div>
+              <h3>MobileCare SSD</h3>
+              <span>Healthcare on the Water</span>
+            </div>
+          </div>
+          <p>Providing innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+            <li><a href="impact.html"><i class="fas fa-chevron-right"></i> Impact Reports</a></li>
+            <li><a href="partners.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Juba, South Sudan</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@mobilecare-ss.org</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+211 924 828 569</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get updates on our work and impact.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
   </footer>
-
-
-  <script src="../scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

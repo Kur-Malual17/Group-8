@@ -3,85 +3,527 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impact - MobileCare South Sudan</title>
-  <link rel="stylesheet" href="../styles.css">
+  <title>Our Impact - MobileCare South Sudan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Cache Control -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 </head>
 <body>
-
-  <header>
+  <!-- Header -->
+  <header class="main-header">
     <div class="container">
       <div class="branding">
-        <h1>MobileCare SSD</h1>
+        <div class="logo">
+          <i class="fas fa-ship"></i>
+          <div class="logo-text">
+            <h1>MobileCare SSD</h1>
+            <span class="tagline">Healthcare on the Water</span>
+          </div>
+        </div>
       </div>
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <button class="hamburger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div id="main-nav" class="main-nav">
+      <div class="main-nav">
         <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html#team">About</a>
-          <a href="services.html">Services</a>
-          <a href="impact.html" class="active">Impact</a>
-          <a href="partners.html">Partners</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" class="nav-link" data-text="Home">Home</a>
+          <a href="about.html" class="nav-link" data-text="About">About</a>
+          <a href="services.html" class="nav-link" data-text="Services">Services</a>
+          <a href="impact.html" class="nav-link active" data-text="Impact">Impact</a>
+          <a href="partners.html" class="nav-link" data-text="Partners">Partners</a>
+          <a href="contact.html" class="nav-link" data-text="Contact">Contact</a>
         </nav>
         <div class="nav-actions">
-          <a href="donate.php" class="donate-btn" target="_blank">Donate Now</a>
-          <a href="login.php" class="login-btn">Login</a>
+          <a href="donate.php" class="donate-btn" target="_blank">
+            <i class="fas fa-heart"></i> Donate Now
+          </a>
+          <a href="login.php" class="login-btn">
+            <i class="fas fa-user"></i> Login
+          </a>
         </div>
       </div>
     </div>
   </header>
-    <div class="stats">
-      <div><h3>8K+</h3><p>Patients Treated</p></div>
-      <div><h3>4+</h3><p>Floating Clinics</p></div>
-      <div><h3>5+</h3><p>Partners & Sponsors</p></div>
-    </div>
-  </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>About MobileCare</h4>
-        <p>MobileCare South Sudan provides innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="impact.html">Impact Reports</a></li>
-          <li><a href="partners.html">Our Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Contact Info</h4>
-        <p>📍 Juba, South Sudan</p>
-        <p>📧 info@mobilecare-ss.org</p>
-        <p>📞 +211 924 828 569</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-links">
-          <a href="#">🌐 Facebook</a>
-          <a href="#">🐦 Twitter</a>
-          <a href="#">📸 Instagram</a>
+  <!-- Page Header -->
+  <section class="page-header impact-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Our Impact</h1>
+        <p>Transforming lives and communities through accessible healthcare in the Sudd Wetland</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <span class="current">Impact</span>
         </div>
       </div>
     </div>
+    <div class="impact-hero-animation">
+      <div class="floating-element" style="--delay: 0s">
+        <i class="fas fa-heartbeat"></i>
+      </div>
+      <div class="floating-element" style="--delay: 1s">
+        <i class="fas fa-tint"></i>
+      </div>
+      <div class="floating-element" style="--delay: 2s">
+        <i class="fas fa-baby"></i>
+      </div>
+    </div>
+  </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+  <!-- Impact Stats -->
+  <section class="impact-stats-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">By The Numbers</h2>
+        <p class="section-subtitle">Measuring our progress and impact across the Sudd Wetland</p>
+      </div>
+      <div class="impact-stats-grid">
+        <div class="impact-stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-user-injured"></i>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number" data-count="12450">0</div>
+            <div class="stat-label">Patients Treated</div>
+            <div class="stat-trend">
+              <i class="fas fa-arrow-up"></i>
+              <span>45% increase from last year</span>
+            </div>
+          </div>
+        </div>
+        <div class="impact-stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-ship"></i>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number" data-count="6">0</div>
+            <div class="stat-label">Floating Clinics</div>
+            <div class="stat-trend">
+              <i class="fas fa-plus"></i>
+              <span>2 new clinics planned</span>
+            </div>
+          </div>
+        </div>
+        <div class="impact-stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">Partners</div>
+            <div class="stat-trend">
+              <i class="fas fa-network-wired"></i>
+              <span>Strong collaboration network</span>
+            </div>
+          </div>
+        </div>
+        <div class="impact-stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number" data-count="185000">0</div>
+            <div class="stat-label">Liters of Clean Water</div>
+            <div class="stat-trend">
+              <i class="fas fa-arrow-up"></i>
+              <span>Daily distribution</span>
+            </div>
+          </div>
+        </div>
+        <div class="impact-stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-baby"></i>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number" data-count="567">0</div>
+            <div class="stat-label">Safe Deliveries</div>
+            <div class="stat-trend">
+              <i class="fas fa-heart"></i>
+              <span>Maternal care success</span>
+            </div>
+          </div>
+        </div>
+        <div class="impact-stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number" data-count="72">0</div>
+            <div class="stat-label">% Disease Reduction</div>
+            <div class="stat-trend">
+              <i class="fas fa-arrow-down"></i>
+              <span>Waterborne illnesses</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stories -->
+  <section class="impact-stories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Stories of Transformation</h2>
+        <p class="section-subtitle">Real lives changed through our healthcare initiatives</p>
+      </div>
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="story-image">
+            <img src="https://www.storyworkshopmw.org/files/data/articles/13409/Maria.png?v=1" alt="Maria receiving maternal care" onerror="this.style.display='none'">
+            <div class="story-overlay">
+              <div class="story-badge">Healthcare Access</div>
+            </div>
+          </div>
+          <div class="story-content">
+            <h3>Maria's Journey to Motherhood</h3>
+            <p>Maria received prenatal care and safely delivered her baby through our mobile clinic services, something that was previously inaccessible in her remote village.</p>
+            <div class="story-stats">
+              <div class="story-stat">
+                <span class="number">567</span>
+                <span class="label">Safe Deliveries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-image">
+            <img src="https://thumbs.dreamstime.com/b/clean-water-flows-community-well-village-public-health-improvement-modern-system-selective-focus-resource-treatment-367376274.jpg?v=1" alt="Clean water flowing from community well" onerror="this.style.display='none'">
+            <div class="story-overlay">
+              <div class="story-badge">Clean Water</div>
+            </div>
+          </div>
+          <div class="story-content">
+            <h3>Clean Water for Nyal Village</h3>
+            <p>Through our water purification systems, Nyal village now has access to safe drinking water, dramatically reducing waterborne diseases in the community.</p>
+            <div class="story-stats">
+              <div class="story-stat">
+                <span class="number">72%</span>
+                <span class="label">Decrease in cholera cases</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-image">
+            <img src="https://www.goodthingsguy.com/wp-content/uploads/2018/06/integrated-emergency-response-ier-620x400.jpg?v=1" alt="Emergency medical response team in action" onerror="this.style.display='none'">
+            <div class="story-overlay">
+              <div class="story-badge">Medical Care</div>
+            </div>
+          </div>
+          <div class="story-content">
+            <h3>Emergency Response Saves Lives</h3>
+            <p>Our rapid response team provided emergency care and transport for critical malaria cases, significantly improving survival rates in remote communities.</p>
+            <div class="story-stats">
+              <div class="story-stat">
+                <span class="number">12450</span>
+                <span class="label">Patients Treated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progress Timeline -->
+  <section class="progress-timeline">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Journey</h2>
+        <p class="section-subtitle">Key milestones in our mission to transform healthcare</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3>Program Launch</h3>
+            <p>MobileCare South Sudan launched with our first floating clinic, serving 3 remote communities in the Sudd Wetland.</p>
+            <div class="timeline-stats">
+              <span>2,500+ patients served</span>
+              <span>3 communities reached</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>Expansion & Partnerships</h3>
+            <p>Added two more clinics and established partnerships with WHO and UNICEF, expanding our reach to 12 communities.</p>
+            <div class="timeline-stats">
+              <span>7,800+ patients served</span>
+              <span>5 new partnerships</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>Technology Integration</h3>
+            <p>Implemented telemedicine services and digital health records, improving care coordination and patient outcomes.</p>
+            <div class="timeline-stats">
+              <span>9,600+ patients served</span>
+              <span>Telemedicine launched</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h3>Sustainable Growth</h3>
+            <p>Expanded to 28 communities with 6 active clinics, focusing on sustainable operations and community empowerment.</p>
+            <div class="timeline-stats">
+              <span>12,450+ patients served</span>
+              <span>28 communities reached</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Map -->
+  <section class="impact-map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Areas We Serve</h2>
+        <p class="section-subtitle">Bringing healthcare to the most remote communities across South Sudan</p>
+      </div>
+      <div class="map-container">
+        <div class="map-visual">
+          <div class="map-base">
+            <div class="region region-1" data-community="Bor County">
+              <span>Bor County</span>
+              <div class="region-tooltip">4,250 patients served</div>
+            </div>
+            <div class="region region-2" data-community="Bentiu">
+              <span>Bentiu</span>
+              <div class="region-tooltip">3,180 patients served</div>
+            </div>
+            <div class="region region-3" data-community="Terekeka">
+              <span>Terekeka</span>
+              <div class="region-tooltip">2,640 patients served</div>
+            </div>
+            <div class="region region-4" data-community="Rumbek">
+              <span>Rumbek</span>
+              <div class="region-tooltip">2,380 patients served</div>
+            </div>
+          </div>
+          <div class="map-points">
+            <div class="point point-1" data-community="Bor County">
+              <div class="point-pulse"></div>
+              <div class="point-tooltip">Bor County - 4,250 patients</div>
+            </div>
+            <div class="point point-2" data-community="Bentiu">
+              <div class="point-pulse"></div>
+              <div class="point-tooltip">Bentiu - 3,180 patients</div>
+            </div>
+            <div class="point point-3" data-community="Terekeka">
+              <div class="point-pulse"></div>
+              <div class="point-tooltip">Twic East - 2,640 patients</div>
+            </div>
+            <div class="point point-4" data-community="Rumbek">
+              <div class="point-pulse"></div>
+              <div class="point-tooltip">Duk - 2,380 patients</div>
+            </div>
+          </div>
+        </div>
+        <div class="map-legend">
+          <h4>Service Coverage</h4>
+          <div class="legend-item">
+            <div class="legend-color primary"></div>
+            <span>Primary Service Areas</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color secondary"></div>
+            <span>Expansion Areas</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-point"></div>
+            <span>Mobile Clinic Locations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Community Voices</h2>
+        <p class="section-subtitle">What people are saying about MobileCare's impact</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"Before MobileCare, we had to travel for days to reach a clinic. Now healthcare comes to our village. My children are healthier and safer."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Sarah Nyakuoth</h4>
+              <span>Community Elder, Bor County</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"The clean water program has transformed our village. Our children no longer suffer from waterborne diseases, and everyone is healthier."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>James Malual</h4>
+              <span>Village Leader, Terekeka</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"As a community health worker, I've seen firsthand how MobileCare's training has empowered our people to take charge of their health."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <div class="author-info">
+              <h4>Dr. Angelina Akech</h4>
+              <span>Community Health Worker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Be Part of Our Impact Story</h2>
+          <p>Join us in bringing healthcare and hope to more communities across the Sudd Wetland</p>
+        </div>
+        <div class="cta-actions">
+          <a href="donate.php" class="btn btn-primary btn-large">
+            <i class="fas fa-heart"></i>
+            <span>Support Our Mission</span>
+          </a>
+          <a href="volunteer.html" class="btn btn-secondary btn-large">
+            <i class="fas fa-hands-helping"></i>
+            <span>Volunteer With Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-ship"></i>
+            <div>
+              <h3>MobileCare SSD</h3>
+              <span>Healthcare on the Water</span>
+            </div>
+          </div>
+          <p>Providing innovative, solar-powered floating clinics that bring life-saving medical services directly to communities across the Sudd Wetland.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+            <li><a href="impact.html"><i class="fas fa-chevron-right"></i> Impact Reports</a></li>
+            <li><a href="partners.html"><i class="fas fa-chevron-right"></i> Our Partners</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Juba, South Sudan</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@mobilecare-ss.org</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+211 924 828 569</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get updates on our work and impact.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 MobileCare South Sudan. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-
-  <script src="../scripts.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    // Force image reload on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('img[src]');
+      images.forEach(img => {
+        const src = img.src;
+        if (src.includes('http')) {
+          // Remove existing cache busters and add new one
+          const cleanSrc = src.split('?')[0];
+          img.src = cleanSrc + '?t=' + new Date().getTime();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
